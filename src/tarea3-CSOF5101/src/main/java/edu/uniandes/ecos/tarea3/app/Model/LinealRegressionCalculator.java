@@ -26,7 +26,7 @@ public class LinealRegressionCalculator {
     }
     
     /*
-     * 
+     * Agrega un elemento a la lista
      * @param pgrID
      * @param ePS
      * @param pAMS

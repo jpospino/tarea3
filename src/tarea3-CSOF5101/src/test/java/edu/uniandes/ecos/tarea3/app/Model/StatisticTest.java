@@ -33,27 +33,101 @@ public class StatisticTest extends TestCase {
     // TODO add test methods here. The name must begin with 'test'. For example:
     // public void testHello() {}
     
-    public void testValidarValores()
+    /**
+     * Prueba unitaria para el metodo getActualAddedModifiedSize
+     */
+    public void testGetActualAddedModifiedSize()
     {
         assertEquals(this.statistic.getActualAddedModifiedSize(), 186.0);
+    }
+    
+    /**
+     * Prueba unitaria para el metodo getActualDevelopmentTime
+     */
+    public void testGetActualDevelopmentTime()
+    {
         assertEquals(this.statistic.getActualDevelopmentTime(), 15.0);
+    }
+    
+    /**
+     * Prueba unitaria para el metodo getEstimatedProxySize
+     */
+    public void testGetEstimatedProxySize()
+    {
         assertEquals(this.statistic.getEstimatedProxySize(), 130.0);
+    }
+    
+    /**
+     * Prueba unitaria para el metodo getPlanAddedModifiedSize
+     */
+    public void testGetPlanAddedModifiedSize()
+    {
         assertEquals(this.statistic.getPlanAddedModifiedSize(), 163.0);
     }
     
-    public void testValidarCuadrados()
+    /**
+     * Prueba unitaria para el metodo actualAddedModifiedSizeSquared
+     */
+    public void testActualAddedModifiedSizeSquared()
     {
         assertEquals(this.statistic.actualAddedModifiedSizeSquared(), (186.0 * 186.0));
+        
+    }
+    
+    /**
+     * Prueba unitaria para el metodo actualDevelopmentTimeSquared
+     */
+    public void testActualDevelopmentTimeSquared()
+    {
         assertEquals(this.statistic.actualDevelopmentTimeSquared(), 15.0 * 15.0);
+    }
+    
+    /**
+     * Prueba unitaria para el metodo estimatedProxySizeSquared
+     */
+    public void testEstimatedProxySizeSquared()
+    {
         assertEquals(this.statistic.estimatedProxySizeSquared(), 130.0 * 130.0);
+    }
+    
+    /**
+     * Prueba unitaria para el metodo planAddedModifiedSizeSquared
+     */
+    public void testPlanAddedModifiedSizeSquared()
+    {
         assertEquals(this.statistic.planAddedModifiedSizeSquared(), 163.0 * 163.0);
     }
     
+    /**
+     * Prueba unitaria para el metodo estimatedProxySizeActualAddedModifiedSize
+     */
     public void testValidarProductos()
     {
         assertEquals(this.statistic.estimatedProxySizeActualAddedModifiedSize(), 130.0 * 186.0);
+    }
+    
+    /**
+     * Prueba unitaria para el metodo estimatedProxySizeActualDevelopmentTime
+     */
+    public void testEstimatedProxySizeActualDevelopmentTime()
+    {
         assertEquals(this.statistic.estimatedProxySizeActualDevelopmentTime(), 130.0 * 15.0);
+    }
+    
+    /**
+     * Prueba unitaria para el metodo planAddedModifiedSizeActualAddedModifiedSize
+     */
+    public void testPlanAddedModifiedSizeActualAddedModifiedSize()
+    {
+        
         assertEquals(this.statistic.planAddedModifiedSizeActualAddedModifiedSize(), 163.0 * 186.0);
+    }
+    
+    /**
+     * Prueba unitaria para el metodo planAddedModifiedSizeActualDevelopmentTime
+     */
+    public void testPlanAddedModifiedSizeActualDevelopmentTime()
+    {
         assertEquals(this.statistic.planAddedModifiedSizeActualDevelopmentTime(), 163.0 * 15.0);               
     }
 }

@@ -13,5 +13,7 @@ Se puede verificar el funcionamiento en heroku en la siguiente url:
 
 https://morning-taiga-73451.herokuapp.com/regresionLineal?proxy=386  
 
+Es posible que loss dynos estén abajo en el momento del llamado. Ejecutar hasta que automáticamente el servicio esté nuevamente en funcionamiento.
+
 puede cambiar el valor de proxy=386 para obtener resultado diferente. se adjuntan las fuentes que se cargan en heroku en el archivo tarea3Heroku.zip dentro de la carpeta src.
 ***************************************

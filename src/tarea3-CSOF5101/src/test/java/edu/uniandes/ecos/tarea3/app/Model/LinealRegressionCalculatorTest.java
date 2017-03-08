@@ -44,25 +44,97 @@ public class LinealRegressionCalculatorTest extends TestCase {
     // TODO add test methods here. The name must begin with 'test'. For example:
     // public void testHello() {}
     
-    public void testCalcularSumatorias()
+    /**
+     * Prueba unitarioa del metodo SumActualAddedModifiedSize
+     */
+    public void testSumActualAddedModifiedSize()
     {
         assertEquals(this.linealRegressionCalculator.sumActualAddedModifiedSize(), 6389.0, 0.01);
+    }
+    
+    /**
+     * Prueba unitarioa del metodo SumActualAddedModifiedSizeSquared
+     */
+    public void testSumActualAddedModifiedSizeSquared()
+    {
         assertEquals(this.linealRegressionCalculator.sumActualAddedModifiedSizeSquared(), 7604693.0, 0.01);
+    }
+
+    /**
+     * Prueba unitarioa del metodo SumActualDevelopmentTimeSquared
+     */
+    public void testSumActualDevelopmentTimeSquared()
+    {
         assertEquals(this.linealRegressionCalculator.sumActualDevelopmentTimeSquared(), 71267.12, 0.01);
-        assertEquals(this.linealRegressionCalculator.sumEstimatedProxySize(), 3828.0, 0.01);  
+    }
+    
+    /**
+     * Prueba unitarioa del metodo sumEstimatedProxySize
+     */
+    public void testSumEstimatedProxySize()
+    {
+        assertEquals(this.linealRegressionCalculator.sumEstimatedProxySize(), 3828.0, 0.01);
+    }
+    
+    /**
+     * Prueba unitarioa del metodo sumEstimatedProxySizeActualAddedModifiedSize
+     */
+    public void testSumEstimatedProxySizeActualAddedModifiedSize()
+    {
         assertEquals(this.linealRegressionCalculator.sumEstimatedProxySizeActualAddedModifiedSize(), 4303108.0, 0.01);
-        assertEquals(this.linealRegressionCalculator.sumEstimatedProxySizeActualDevelopmentTime(), 411628.6, 0.01);   
+    }
+    
+    /**
+     * Prueba unitarioa del metodo sumEstimatedProxySizeActualDevelopmentTime
+     */
+    public void testSumEstimatedProxySizeActualDevelopmentTime()
+    {
+        assertEquals(this.linealRegressionCalculator.sumEstimatedProxySizeActualDevelopmentTime(), 411628.6, 0.01);  
+    }
+    
+    /**
+     * Prueba unitarioa del metodo sumEstimatedProxySizeSquared
+     */
+    public void testSumEstimatedProxySizeSquared()
+    {
         assertEquals(this.linealRegressionCalculator.sumEstimatedProxySizeSquared(), 2540284.0, 0.01);
+    }
+    
+    /**
+     * Prueba unitarioa del metodo sumPlanAddedModifiedSizeActualAddedModifiedSize
+     */
+    public void testSumPlanAddedModifiedSizeActualAddedModifiedSize()
+    {
         assertEquals(this.linealRegressionCalculator.sumPlanAddedModifiedSizeActualAddedModifiedSize(), 5242927.0, 0.01);
+    }
+    
+    /**
+     * Prueba unitarioa del metodo sumPlanAddedModifiedSizeActualDevelopmentTime
+     */
+    public void testSumPlanAddedModifiedSizeActualDevelopmentTime()
+    {
         assertEquals(this.linealRegressionCalculator.sumPlanAddedModifiedSizeActualDevelopmentTime(), 503075.7, 0.01);
+    }
+    
+    /**
+     * Prueba unitarioa del metodo sumPlanAddedModifiedSizeSquared
+     */
+    public void testSumPlanAddedModifiedSizeSquared()
+    {
         assertEquals(this.linealRegressionCalculator.sumPlanAddedModifiedSizeSquared(), 3741346.0, 0.01);
     }
     
+    /**
+     * Prueba unitarioa del metodo printStatistics
+     */
     public void testImprimirStatistics()
     {
         //this.linealRegressionCalculator.printStatistics();
     }
     
+    /**
+     * Prueba unitarioa de la impresión de los resultados
+     */
     public void testCalcPlanAddedModifiedSizeEPSAAM()
     {
         
